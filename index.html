@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>도담도담</title>
+    <meta name="author" content="Kim.JuEun">
+    <meta name="description" content="웹 퍼블리셔 김주은의 포트폴리오 입니다.">
+    <meta name="keywords" content="design, html5, css3, jquery, portfolio">
+    <link rel="icon" href="./resource/img/text_logo_twice.ico" type="image/x-icon" sizes="16x16">
+    
+    <meta property="og:url" content="공유시 이동 url">
+    <meta property="og:title" content="도담도담 홈페이지">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="공유시 보여질 이미지 경로">
+    <meta property="og:description" content="사지 않고, 입양하는 문화를 만듭니다.">
+    
+    <!--slick slide CDN-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <!--구글 웹폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    
+    <!--외부 css-->
+    <link rel="stylesheet" href="./resource/style.css">
+    <link rel="stylesheet" href="./resource/reset.css">
+</head>
+
+<body>
+    <ul id="skip_navigation" class="hidden">
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#activity">도담도담의 활동내역 바로가기</a></li>
+        <li><a href="#adopt">입양을 기다리는 동물들 바로가기</a></li>
+        <li><a href="#shelter">지역 내 보호소 리스트 바로가기</a></li>
+        <li><a href="#donate">일시후원 정기후원 바로가기</a></li>
+    </ul>
+
+    <header id="header">
+        <div class="inner_wrap clearfix">
+            <h1>
+                <a href="#" class="head_logo" title="메인페이지로 이동합니다."><span class="hidden">도담도담 로고</span></a>
+            </h1>
+            <nav>
+                <ul class="gnb clearfix">
+                    <li>
+                        <a href="#">입양하기</a>
+                        <ul class="lnb">
+                            <li><a href="#">GUIDE</a></li>
+                            <li><a href="#">ADOPTION</a></li>
+                            <li><a href="#">DISRUPTION</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사업소개</a>
+                        <ul class="lnb">
+                            <li><a href="#">COMPANY</a></li>
+                            <li><a href="#">HISTORY</a></li>
+                            <li><a href="#">ADDRESS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">캠페인</a>
+                        <ul class="lnb">
+                            <li><a href="#">CAMPAIGN</a></li>
+                            <li><a href="#">ISSUE</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">후원/기부</a>
+                        <ul class="lnb">
+                            <li><a href="#">SUPPORT</a></li>
+                            <li><a href="#">DONATION</a></li>
+                            <li><a href="#">REPORT</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">스토리</a>
+                        <ul class="lnb">
+                            <li><a href="#">STORY</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--메뉴영역 끝-->
+    </header>
+
+    <!-- 메인 슬라이드 -->
+    <section id="slide">
+        <div id="main_slide">
+            <div class="item"><img src="./resource/img/slide_1.png" alt="댕댕이 페스티벌 안내"></div>
+            <div class="item"><img src="./resource/img/slide_2.png" alt="생활 속 비건을 실천하는 방법"></div>
+            <div class="item"><img src="./resource/img/slide_3.png" alt="유기견 애니메이션 영화 언더독"></div>
+        </div>
+        <div class="pager_btns">
+            <p>
+                <span class="now_page">1</span>/3
+            </p>
+        </div>
+    </section>
+    
+    <div id="banner">
+        <p class="hidden">도담도담은 사지 않고 입양하는 문화를 만듭니다.</p>
+    </div>
+
+    <div id="content">
+        <section id="activity" class="clearfix">
+            <div class="inner_wrap">
+                <h3 class="section_title align_rt">국내 유일의 유기동물 플랫폼 도담도담은<br>이런 일들을 합니다.</h3>
+                
+                <ul class="act_btns">
+                    <li class="active" value="tab_box1">
+                        <button type="button" class="lately">
+                            <span class="hidden">2021년도 활동모음</span>
+                        </button>
+                    </li>
+                    <li value="tab_box2">
+                        <button type="button" class="yester">
+                            <span class="hidden">2020년도 활동모음</span>
+                        </button>
+                    </li>
+                    <li value="tab_box3">
+                        <button type="button" class="bf_last">
+                            <span class="hidden">2019년도 활동모음</span>
+                        </button>
+                    </li>
+                </ul>
+                
+                <ul class="act_wrap">
+                    <li id="tab_box1" class="act_box active">
+                        <ul class="activity_wrap">
+                            <li>
+                                <a href="#">
+                                    <p>[봉사] 상반기 미용봉사 남양주 보호소</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>[입양] 말리는 오늘도 행복해, 해외입양 이야기</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>[캠페인] 모닝노크, 알고계시나요?</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>[구조] 낭떠러지 옆 삼남매의 구조 기록</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="tab_box2" class="act_box">
+                        <ul class="activity_wrap">
+                            <li>
+                                <a href="#">
+                                    <p>[봉사] 푸름 보호소 리모델링 인력 및 자재 지원</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>[봉사] 별밤 보호소 대청소 자원봉사자 모집</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>[구조] 식용 개농장 고발 및 64마리 구조</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>[캠페인] 궁디팡팡 캣페스타 14번째 이야기</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="tab_box3" class="act_box">
+                        <ul class="activity_wrap">
+                            <li>
+                                <a href="#">
+                                    <p>[입양] 시고르자브종 4남매 해외입양 이야기</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>[봉사] 하반기 의료봉사 안산시 보호소</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>[봉사] 상반기 미용봉사 남양주 보호소</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>[구조] 단추가 지붕 위에 올라가 살게된 이유</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="count" class="clearfix">
+            <div class="inner_wrap">      
+                <h3 class="section_title">도담도담은 매년 1만 마리 이상의 유기동물에게<br>소중한 가족을 찾아주고 있습니다.</h3>
+                <div class="animal_box">
+                    <img src="./resource/img/img_puppy.png" alt="입양을 기다리는 강아지">
+                </div>
+                <p class="counting align_rt">도담도담을 통해 입양된 유기동물<span class="number_effect">78611</span>
+                </p>
+            </div>
+        </section>
+
+        <section id="adopt" class="clearfix">
+            <div class="inner_wrap">
+                <h3 class="section_title">가족을 기다리는 도담도담 친구들</h3>
+                <ul class="adopt_btns">
+                    <li class="active" value="dog"><button type="button">DOG</button></li>
+                    <li value="cat"><button type="button">CAT</button></li>
+                </ul>
+                <div id="dog" class="adopt_slide active">
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/dog_1.jpg" alt="유기견 볼트 사진"></li>
+                                <li class="animal_name">볼트</li>
+                                <li class="animal_info">개(믹스)<br>수컷(중성화 X)<br>1살/15.6kg/브라운</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/dog_2.jpg" alt="유기견 아름이 사진"></li>
+                                <li class="animal_name">아름이</li>
+                                <li class="animal_info">개(믹스)<br>수컷(중성화 X)<br>4개월/5.9kg/블랙브라운</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/dog_3.jpg" alt="유기견 올리 사진"></li>
+                                <li class="animal_name">올리</li>
+                                <li class="animal_info">개(보더콜리)<br>수컷(중성화 X)<br>10살/21.0kg/화이트블랙</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/dog_4.jpg" alt="유기견 마리 사진"></li>
+                                <li class="animal_name">마리</li>
+                                <li class="animal_info">개(라브라도 리트리버)<br>암컷(중성화 O)<br>3살/28.0kg/초코브라운</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/dog_5.jpg" alt="유기견 사랑이 사진"></li>
+                                <li class="animal_name">사랑이</li>
+                                <li class="animal_info">개(믹스)<br>암컷(중성화 O)<br>2살/15.3kg/베이지</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/dog_6.jpg" alt="유기견 나나 사진"></li>
+                                <li class="animal_name">나나</li>
+                                <li class="animal_info">개(슈나우져)<br>암컷(중성화 O)<br>10살/5.3kg/블랙</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/dog_7.jpg" alt="유기견 쿠키 사진"></li>
+                                <li class="animal_name">쿠키</li>
+                                <li class="animal_info">개(푸들)<br>수컷(중성화 O)<br>12살/6.3kg/브라운</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/dog_8.jpg" alt="유기견 코코 사진"></li>
+                                <li class="animal_name">코코</li>
+                                <li class="animal_info">개(믹스)<br>암컷(중성화 X)<br>2살/5.2kg/베이지</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cat" class="adopt_slide">
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/cat_1.jpg" alt="유기묘 홀리 사진"></li>
+                                <li class="animal_name">홀리</li>
+                                <li class="animal_info">고양이(코숏)<br>수컷(중성화 O)<br>4살/6.0kg/치즈</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/cat_2.jpg" alt="유기묘 마리안 사진"></li>
+                                <li class="animal_name">마리안</li>
+                                <li class="animal_info">고양이(코숏)<br>암컷(중성화 O)<br>7살/6.1kg/삼색</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/cat_3.jpg" alt="유기묘 체다 사진"></li>
+                                <li class="animal_name">체다</li>
+                                <li class="animal_info">고양이(코숏)<br>암컷(중성화 X)<br>3개월/1.0kg/치즈</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/cat_4.jpg" alt="유기묘 타래 사진"></li>
+                                <li class="animal_name">타래</li>
+                                <li class="animal_info">고양이(코숏)<br>암컷(중성화 X)<br>3개월/1.0kg/고등어</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/cat_5.jpg" alt="유기묘 가을이 사진"></li>
+                                <li class="animal_name">가을이</li>
+                                <li class="animal_info">고양이(코숏)<br>암컷(중성화 O)<br>6살/8.2kg/치즈</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/cat_6.jpg" alt="유기묘 꽃님이 사진"></li>
+                                <li class="animal_name">꽃님이</li>
+                                <li class="animal_info">고양이(터키쉬앙고라 믹스)<br>수컷(중성화 O)<br>2살/5.5kg/흰색</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/cat_7.jpg" alt="유기묘 나리 사진"></li>
+                                <li class="animal_name">나리</li>
+                                <li class="animal_info">고양이(코숏)<br>암컷(중성화 O)<br>5살/5.0kg/화이트 고등어</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adopt_box">
+                        <div class="adopt_con">
+                            <ul class="adopt_element">
+                                <li class="thumbnail"><img src="./resource/img/cat_8.jpg" alt="유기묘 페페 사진"></li>
+                                <li class="animal_name">페페</li>
+                                <li class="animal_info">고양이(페르시안)<br>수컷(중성화 O)<br>5살/4.6kg/화이트블랙</li>
+                            </ul>
+                            <div class="adopt_action">
+                                <p><a href="#adopt">결연맺기</a></p>
+                                <p><a href="#adopt">입양하기</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shelter">
+            <div class="inner_wrap">
+                <h3 class="section_title">지역 내 보호소 리스트</h3>
+                <div class="select_box">
+                    <select id="shelter_list" name="shelter_list">
+                        <option value="seoul">서울</option>
+                        <option value="inc">인천</option>
+                        <option value="ggd">경기도</option>
+                        <option value="gwd">강원도</option>
+                        <option value="cbd">충청북도</option>
+                        <option value="cnd">충청남도</option>
+                        <option value="jb">전라북도</option>
+                        <option value="jn">전라남도</option>
+                        <option value="gb">경상북도</option>
+                        <option value="gn">경상남도</option>
+                        <option value="jeju">제주</option>
+                    </select>
+                    <i class="down"></i>
+                </div>
+
+                <table>
+                    <colgroup>
+                        <col width="300px">
+                        <col width="*">
+                        <col width="220px">
+                    </colgroup>
+                    <thead class="hidden">
+                        <tr>
+                            <th>보호소</th>
+                            <th>주소</th>
+                            <th>전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody id="seoul" class="shelter_tbody active">
+                        <tr>
+                            <td class="sh_name">서울동물복지지원센터</td>
+                            <td class="sh_address">서울특별시 마포구 매봉산로 31 (상암동) 에스플렉스센터 지하1층</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>02-2124-2832</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">홍익동물병원</td>
+                            <td class="sh_address">서울특별시 마포구 독막로 45 (합정동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>02-325-2026</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">열린동물병원</td>
+                            <td class="sh_address">서울특별시 용산구 원효로2가 84-10</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>02-3273-0075</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">강동구청 반려동물팀</td>
+                            <td class="sh_address">서울특별시 강동구 성내로 25 (성내동, 강동구청) 강동구청 </td>
+                            <td class="sh_tel"><a href="tel:"><i></i>02-3425-6015</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">서초동물사랑센터</td>
+                            <td class="sh_address">서울특별시 서초구 양재천로19길 22 (양재동, 숨빌딩) 서초동물사랑센터</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>02-6956-7980</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">민트동물병원</td>
+                            <td class="sh_address">서울특별시 용산구 원효로 51 (산천동, 삼성테마트) 119호</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>02-707-2235</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="inc" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">늘푸른동물병원</td>
+                            <td class="sh_address">인천광역시 부평구 후정동로 60(삼상동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>032-507-0075</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">인천수의사회</td>
+                            <td class="sh_address">인천광역시 계양구 다남로165번길 56(다남동, 유기동물보호소)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>032-515-7567</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">우리동물병원</td>
+                            <td class="sh_address">인천광역시 서구 서곶로 349 (연희동) 우리동물병원</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>032-566-0075</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">가정동물병원</td>
+                            <td class="sh_address">인청광역시 서구 가정로 346 (가정동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>032-575-0833</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">신공항동물병원</td>
+                            <td class="sh_address">인천광역시 중구 운중로 33 (운남동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>032-575-4598</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="ggd" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">수원시 동물보호센터</td>
+                            <td class="sh_address">경기도 수원시 영통구 광교호수로 234 (하동, 수원시 동물보호센터) 하동 40-10</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>031-228-3557</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">한국야생동물보호협회</td>
+                            <td class="sh_address">경기도 안산시 상록구 청곡길 50 (부곡동) (사)한국야생동물보호협회</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>031-296-0124</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">용인시 동물보호센터</td>
+                            <td class="sh_address">경기도 용인시 처인구 중부대로 1074-1 (삼가동, 용인시 동물보호센터)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>031-324-3463</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">남양유기견보호센터</td>
+                            <td class="sh_address">경기도 화성시 남양읍 화성로 1483-27 (남양읍)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>031-356-2281</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">가평군유기동물보호소</td>
+                            <td class="sh_address">경기도 가평군 가평읍 아랫마장길 59 (가평읍, 농업기술센터) 가평 유기동물 보호소</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>031-580-4748</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">남양주동물보호협회</td>
+                            <td class="sh_address">경기도 남양주시 금곡로 44 (금곡동, 성원빌딩) 1층</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>031-591-7270</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="gwd" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">평창군유기동물보호소</td>
+                            <td class="sh_address">강원도 평창군 진부면 청송로 61</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3397-9150</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">삼척시유기동물보호소</td>
+                            <td class="sh_address">강원도 삼척시 근덕면 교곡길 127-281 (근덕면, 쓰레기소각시설) 유기동물보호소</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-4373-1899</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">춘천시 동물보호센터</td>
+                            <td class="sh_address">강원도 춘천시 신북읍 영서로 3282 (신북읍) (전)102보충대 주차장</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>033-245-5351</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">영월군위탁관리보호소</td>
+                            <td class="sh_address">강원도 영월군 영월읍 하송로 64 (영월읍, 영월군청사)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>033-370-2392</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="cbd" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">피학대동물임시보호소</td>
+                            <td class="sh_address">충청북도 증평군 증평읍 증안길 83-11 </td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-2061-9119</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">괴산증평동물보호센터</td>
+                            <td class="sh_address">충청북도 증평군 도안면 입장길 239 (도안면)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3169-1151</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">단양군유기동물보호소</td>
+                            <td class="sh_address">충청북도 단양군 매포읍 우덕리 910번지</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3822-4351</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">반려동물보호센터</td>
+                            <td class="sh_address">충청북도 청주시 흥덕구 강내면 서부로 411-55 (강내면)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>043-201-2298</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">제천시 동물보호센터</td>
+                            <td class="sh_address">충청북도 제천시 금성면 적성로8길 51 (금성면)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>043-647-0059</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="cnd" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">계룡시유기동물보호소</td>
+                            <td class="sh_address">충청남도 계룡시 엄사면 천마로 12</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-5408-8461</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">보령시임시동물보호소</td>
+                            <td class="sh_address">충청남도 보령시 녹문3길 7 (내항동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-5427-7210</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">금일동물보호센터</td>
+                            <td class="sh_address">충청남도 홍성군 홍동면 충절로 625 (홍동면)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-5432-5665</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">유실유기동물보호소</td>
+                            <td class="sh_address">충청남도 천안시 동남구 충절로 441 (삼룡동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-8897-5119</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">당진시동물보호소</td>
+                            <td class="sh_address">충청남도 당진시 고대면 연동로 30-6 (고대면)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>041-356-8210</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">서산동물병원</td>
+                            <td class="sh_address">충청남도 서산시 안견로 235 (동문동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>041-667-5525</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="jb" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">연합동물병원</td>
+                            <td class="sh_address">전라북도 부안군 부안읍 번영로 185 (부안읍, 르노삼성자동차) 연합동물병원</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3652-8183</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">익산유기동물보호소</td>
+                            <td class="sh_address">전라북도 익산시 서동로42길 77 (용제동) 16통 1반</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3659-2380</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">별빛유기동물지킴이</td>
+                            <td class="sh_address">전라북도 완주군 용진읍 순지2길 187-6</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-4137-1009</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="jn" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">나주유기동물보호센터</td>
+                            <td class="sh_address">전라남도 나주시 산포면 내기3길 71-43 [*미고시]</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-2331-7377</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">구례 보호소</td>
+                            <td class="sh_address">전라남도 구례군 광의면 월곡1길 22 (광의면) 수월리 897-1</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3285-5325</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">담양군 동물보호센터</td>
+                            <td class="sh_address">전라남도 담양군 용면 시암골로 280-57 (용면) :용면 두장리 21번지</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3604-1338</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">유기동물임시보호센터</td>
+                            <td class="sh_address">전라남도 완도군 신지면 신지로6번길 23-89 (신지면)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3616-6658</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="gb" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">상주유기동물보호센터</td>
+                            <td class="sh_address">경상북도 상주시 청리면 남상주로 1205-59</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-2415-2467</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">경산시유기동물보호센터</td>
+                            <td class="sh_address">경상북도 경산시 용성면 사양지길 95 (용성면)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-2536-0955</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">김천시 동물보호센터</td>
+                            <td class="sh_address">경상북도 김천시 조마로 2128 (양천동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3477-7771</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">경주시유기동물보호소</td>
+                            <td class="sh_address">경상북도 경주시 용담로 12 (황성동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-3841-6303</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">유기동물보호센터</td>
+                            <td class="sh_address">경상북도 안동시 서후면 풍산태사로 3252-29 (서후면)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-7703-1999</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="gn" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">산청동물보호센터</td>
+                            <td class="sh_address">경상남도 산청군 산청읍 친환경로 2783-25 (산청읍)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-2050-8577</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">창년 유기동물보호소</td>
+                            <td class="sh_address">경상남도 창녕군 고암면 창밀로 335-26 (고암면) 고암면 억만리 28</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-5488-5003</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">밀양시동물보호센터</td>
+                            <td class="sh_address">경상남도 밀양시 삼랑진읍 천태로 472 (삼랑진읍)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>010-5656-6665</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">누리동물병원</td>
+                            <td class="sh_address">부산광역시 해운대구 송정2로13번길 46 (송정동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>051-701-7599</a></td>
+                        </tr>
+                        <tr>
+                            <td class="sh_name">거제시유기동물보호소</td>
+                            <td class="sh_address">경상남도 거제시 사등면 두동로1길 109 (사등면, 한국자원재생공사폐비닐적재장) 거제시유기동물보호소</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>055-639-6368</a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <tbody id="jeju" class="shelter_tbody">
+                        <tr>
+                            <td class="sh_name">제주 동물보호센터</td>
+                            <td class="sh_address">제주특별자치도 제주시 첨단동길 184-14 (용강동)</td>
+                            <td class="sh_tel"><a href="tel:"><i></i>064-710-4065</a></td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+        </section>
+        <section id="donate">
+            <h3 class="section_title hidden">도담도담 후원 함께하기</h3>
+            <div class="dn_box temporary">
+                <a href="#donate" class="clearfix">
+                    <div class="left_area">
+                        <span>일시후원</span>
+                        <p>소외된 동물들의<br>지속가능한 삶을 위해</p>
+                        <div>바로가기 <i></i></div>
+                    </div>
+                    <div class="right_area">
+                        <p><img src="./resource/img/dog_8.jpg" alt="풀밭 위의 강아지"></p>
+                    </div>
+                </a>
+            </div>
+            <div class="dn_box periodic">
+                <a href="#donate" class="clearfix">
+                    <div class="left_area">
+                        <span>정기후원</span>
+                        <p>동물과 사람이 함께<br>사는 삶을 위해</p>
+                        <div>바로가기 <i></i></div>
+                    </div>
+                    <div class="right_area">
+                        <p><img src="./resource/img/act_2.jpg" alt="보호자와 반려견"></p>
+                    </div>
+                </a>
+            </div>
+            <div class="wave_wrap">
+                <div class="wave"></div>
+            </div>
+        </section>
+    </div>
+    
+    <footer id="footer">
+        <div class="foot_top">
+            <ul class="inner_wrap">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+            </ul>
+        </div>
+        <div class="foot_btm">
+            <div class="inner_wrap">
+                <address>
+                    <p class="co_info">주식회사 도담도담 ㅣ 대표자 : 김주은 ㅣ 개인정보책임관리자 : 김주은<br>사업자번호 : 322-87-00895 ㅣ 사업장 주소 : 서울특별시 마포구 대흥로 67 (정신빌딩) 401호</p>
+                </address>
+                <p class="source co_info">&copy;도담도담 제공/데이터 출처 <a href="https://www.mafra.go.kr/sites/mafra/index.do"><strong>농림축산식품부</strong></a> ㅣ Website made by Kim.JuEun</p>
+                <div class="foot_logo"><span class="hidden">하단로고</span></div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="go_top"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./resource/common.js"></script>
+    
+</body>
+
+</html>

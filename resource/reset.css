@@ -1,0 +1,12 @@
+@charset "utf-8"
+
+h1~h6 {font-weight:normal;}
+img,fieldset,iframe{border:0;}
+input,select,button{cursor:pointer; vertical-align:middle;}
+button{background:none;border:none;}
+em,address,i,strong {font-style:normal; vertical-align:baseline;}
+a,a:hover,a:active,a:link,a:visited {text-decoration:none; cursor:pointer;}
+ul,ol,li,dl,dt,dd {list-style:none;}
+hr {display:none;}
+legend {display:block; position:absolute; top:0; left:-9999em;}
+table {width:100%; border:0; border-collapse:collapse; border-spacing:0; empty-cells:show;}
