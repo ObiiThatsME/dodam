@@ -210,7 +210,7 @@
                 <div class="animal_box">
                     <img src="./resource/img/img_puppy.png" alt="입양을 기다리는 강아지">
                 </div>
-                <p class="counting align_rt">도담도담을 통해 입양된 유기동물<span class="number_effect">78611</span>
+                <p class="counting align_rt">도담도담을 통해 입양된 유기동물<span>78611</span>
                 </p>
             </div>
         </section>
@@ -813,7 +813,16 @@
   crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./resource/common.js"></script>
+    <script type="text/javascript">
+        var $status = $('.now_page');
+        var $slickElement = $('#slide #main_slide');
     
+        $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+            //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+            var i = (currentSlide ? currentSlide : 0) + 1;
+            $status.text(i + '/' + slick.slideCount);
+        });
+    </script>
 </body>
 
 </html>

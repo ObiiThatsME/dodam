@@ -4,7 +4,6 @@ $(document).ready(function(){
     slide_play();
     act_tab();
     table_tab2();
-    scroll_counting();
     top_btn_fade();
 });
 
@@ -86,33 +85,6 @@ function table_tab2(){
     $("select#shelter_list").change(function () {
         $('.shelter_tbody').removeClass('active');
         $('#' + $(this).val()).addClass('active');
-    });
-}
-
-function counting_number(){
-    
-    let cnt0 = 78550;
-    counterFn();
-
-    function counterFn() {
-        id0 = setInterval(count0Fn, 40);
-
-        function count0Fn() {
-            cnt0++;
-            if (cnt0 > 78611) {
-                clearInterval(id0);
-            } else {
-                $(".number_effect").text(cnt0);
-            }
-        }
-    }
-}
-
-function scroll_counting(){
-    $(window).scroll(function(){
-        if($(this).scrollTop() >= 500){
-           counting_number();
-        }
     });
 }
 
